@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;LinearLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;ScrollView</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+
+            <span class="s0">&lt;Space</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewName&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Name : &quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;EditText</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/editTextName&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:hint</span><span class="s2">=&quot;e.g. John Smith&quot;</span>
+                <span class="s1">android:inputType</span><span class="s2">=&quot;textPersonName&quot;</span>
+                <span class="s1">android:textColorHint</span><span class="s2">=&quot;#9E0D0D&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;Space</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewNumber&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;e.g. Number: &quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;EditText</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/editTextPhone&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:hint</span><span class="s2">=&quot;e.g. 91211111&quot;</span>
+                <span class="s1">android:inputType</span><span class="s2">=&quot;phone&quot;</span>
+                <span class="s1">android:textColorHint</span><span class="s2">=&quot;#9E0D0D&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;Space</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewPax&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Pax&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;EditText</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/editTextPax&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:hint</span><span class="s2">=&quot;e.g. 6&quot;</span>
+                <span class="s1">android:inputType</span><span class="s2">=&quot;textPersonName&quot;</span>
+                <span class="s1">android:textColorHint</span><span class="s2">=&quot;#9E0D0D&quot; </span><span class="s0">/&gt;</span>
+
+
+            <span class="s0">&lt;Space</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;DatePicker</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/datePicker&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:headerBackground</span><span class="s2">=&quot;@drawable/ic_launcher_background&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TimePicker</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/timePicker&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;#67D0DD&quot;</span>
+                <span class="s1">android:headerBackground</span><span class="s2">=&quot;@drawable/ic_launcher_background&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;RadioGroup</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/radioGroupsmokes&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;RadioButton</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/radioButtonSmoker&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Smoking Area&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;RadioButton</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/radioButtonNonSmoker&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:checked</span><span class="s2">=&quot;true&quot;</span>
+                    <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Non-smoking Area&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;Space</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/buttonSubmit&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;SUBMIT&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textView&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/buttonReset&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Reset?&quot;</span>
+                        <span class="s1">android:textColorLink</span><span class="s2">=&quot;#C50000&quot;</span>
+                        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#FF0000&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;EditText</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/editTextDisplay&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:cursorVisible</span><span class="s2">=&quot;true&quot;</span>
+                        <span class="s1">android:editable</span><span class="s2">=&quot;true&quot;</span>
+                        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+                        <span class="s1">android:freezesText</span><span class="s2">=&quot;true&quot;</span>
+                        <span class="s1">android:inputType</span><span class="s2">=&quot;textPersonName&quot;</span>
+                        <span class="s1">android:linksClickable</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewDisplayName&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:cursorVisible</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewNumberA&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewPaxA&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewArea&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewDP&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textViewTP&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;/RadioGroup&gt;</span>
+
+
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+    <span class="s0">&lt;/ScrollView&gt;</span>
+
+<span class="s0">&lt;/LinearLayout&gt;</span></pre>
+</body>
+</html>

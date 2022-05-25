@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. John Smith"
+                android:inputType="textPersonName"
+                android:textColorHint="#9E0D0D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e.g. Number: "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. 91211111"
+                android:inputType="phone"
+                android:textColorHint="#9E0D0D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pax"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. 6"
+                android:inputType="textPersonName"
+                android:textColorHint="#9E0D0D" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:headerBackground="@drawable/ic_launcher_background" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#67D0DD"
+                android:headerBackground="@drawable/ic_launcher_background" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupsmokes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSmoker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Smoking Area" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNonSmoker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:text="Non-smoking Area" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/buttonReset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reset?"
+                        android:textColorLink="#C50000"
+                        app:backgroundTint="#FF0000" />
+
+                    <EditText
+                        android:id="@+id/editTextDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:editable="true"
+                        android:ems="10"
+                        android:freezesText="true"
+                        android:inputType="textPersonName"
+                        android:linksClickable="false"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textViewDisplayName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNumberA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPaxA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

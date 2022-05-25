@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">sg.edu.rp.c346.id21013643.l04_reservation</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">androidx.appcompat.app.AppCompatActivity</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">android.os.Bundle</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.view.View</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.Button</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.DatePicker</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.EditText</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.RadioButton</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.RadioGroup</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.TextView</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.TimePicker</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.Toast</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">org.w3c.dom.Text</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity {</span>
+
+    <span class="s1">TextView tvName</span><span class="s0">;</span>
+    <span class="s1">TextView tvNum</span><span class="s0">;</span>
+    <span class="s1">TextView tvPax</span><span class="s0">;</span>
+
+    <span class="s1">EditText etName</span><span class="s0">;</span>
+    <span class="s1">EditText etNum</span><span class="s0">;</span>
+    <span class="s1">EditText etPax</span><span class="s0">;</span>
+
+    <span class="s1">DatePicker dp</span><span class="s0">;</span>
+    <span class="s1">TimePicker tp</span><span class="s0">;</span>
+
+    <span class="s1">RadioGroup rg</span><span class="s0">;</span>
+    <span class="s1">RadioButton smoker</span><span class="s0">;</span>
+    <span class="s1">RadioButton nonsmoker</span><span class="s0">;</span>
+
+    <span class="s1">Button btnSubmit</span><span class="s0">;</span>
+    <span class="s1">Button btnReset</span><span class="s0">;</span>
+
+    <span class="s1">EditText etDisplay</span><span class="s0">;</span>
+    <span class="s1">TextView tvNameDisp </span><span class="s0">;</span>
+    <span class="s1">TextView tvNumDisp</span><span class="s0">;</span>
+    <span class="s1">TextView tvPaxDisp</span><span class="s0">;</span>
+    <span class="s1">TextView tvDP</span><span class="s0">;</span>
+    <span class="s1">TextView tvTP</span><span class="s0">;</span>
+    <span class="s1">TextView tvArea</span><span class="s0">;</span>
+
+
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span><span class="s0">;</span>
+        <span class="s1">setContentView(R.layout.activity_main)</span><span class="s0">;</span>
+
+        <span class="s1">tvName = findViewById(R.id.textViewName)</span><span class="s0">;</span>
+        <span class="s1">tvNum = findViewById(R.id.textViewNumber)</span><span class="s0">;</span>
+        <span class="s1">tvPax = findViewById(R.id.textViewPax)</span><span class="s0">;</span>
+
+        <span class="s1">etName = findViewById(R.id.editTextName)</span><span class="s0">;</span>
+        <span class="s1">etNum = findViewById(R.id.editTextPhone)</span><span class="s0">;</span>
+        <span class="s1">etPax = findViewById(R.id.editTextPax)</span><span class="s0">;</span>
+
+
+        <span class="s1">dp = findViewById(R.id.datePicker)</span><span class="s0">;</span>
+        <span class="s1">tp = findViewById(R.id.timePicker)</span><span class="s0">;</span>
+
+        <span class="s1">rg = findViewById(R.id.radioGroupsmokes)</span><span class="s0">;</span>
+        <span class="s1">smoker = findViewById(R.id.radioButtonSmoker)</span><span class="s0">;</span>
+        <span class="s1">nonsmoker = findViewById(R.id.radioButtonNonSmoker)</span><span class="s0">;</span>
+
+        <span class="s1">btnSubmit = findViewById(R.id.buttonSubmit)</span><span class="s0">;</span>
+        <span class="s1">btnReset = findViewById(R.id.buttonReset)</span><span class="s0">;</span>
+
+        <span class="s1">etDisplay = findViewById(R.id.editTextDisplay)</span><span class="s0">;</span>
+        <span class="s1">tvNameDisp = findViewById(R.id.textViewDisplayName)</span><span class="s0">;</span>
+        <span class="s1">tvNumDisp = findViewById(R.id.textViewNumberA)</span><span class="s0">;</span>
+        <span class="s1">tvPaxDisp = findViewById(R.id.textViewPaxA)</span><span class="s0">;</span>
+        <span class="s1">tvArea= findViewById(R.id.textViewArea)</span><span class="s0">;</span>
+        <span class="s1">tvDP = findViewById(R.id.textViewDP)</span><span class="s0">;</span>
+        <span class="s1">tvTP = findViewById(R.id.textViewTP)</span><span class="s0">;</span>
+
+
+
+
+
+        <span class="s1">btnSubmit.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+
+                <span class="s1">etDisplay.setText(</span><span class="s2">&quot;RECEIPT : &quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+                <span class="s1">String name = etName.getText().toString()</span><span class="s0">;</span>
+                <span class="s1">String nameA = </span><span class="s2">&quot;User's Name: &quot; </span><span class="s1">+ name </span><span class="s0">;</span>
+
+                <span class="s1">tvNameDisp.setText(nameA)</span><span class="s0">;</span>
+
+                <span class="s1">String number = etNum.getText().toString()</span><span class="s0">;</span>
+                <span class="s1">String numberA = </span><span class="s2">&quot;User's Contact Number: &quot; </span><span class="s1">+ number</span><span class="s0">;</span>
+                <span class="s1">tvNumDisp.setText(numberA)</span><span class="s0">;</span>
+
+                <span class="s1">String paxA = </span><span class="s2">&quot;User's pax: &quot; </span><span class="s1">+ etPax.getText().toString()</span><span class="s0">;</span>
+                <span class="s1">tvPaxDisp.setText(paxA)</span><span class="s0">;</span>
+
+
+                <span class="s0">int </span><span class="s1">checkedRadioId = rg.getCheckedRadioButtonId()</span><span class="s0">;</span>
+                <span class="s0">if </span><span class="s1">( checkedRadioId == R.id.radioButtonSmoker) {</span>
+
+                    <span class="s1">tvArea.setText(</span><span class="s2">&quot;User's Area of Choice: Smoking Area&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+
+                    <span class="s1">tvArea.setText(</span><span class="s2">&quot;User's Area of Choice: Non-Smoking Area&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+
+                <span class="s1">String hour = tp.getCurrentHour().toString()</span><span class="s0">;</span>
+                <span class="s1">String min = tp.getCurrentMinute().toString()</span><span class="s0">;</span>
+                <span class="s1">String result1 = </span><span class="s2">&quot;Time chose is:  &quot; </span><span class="s1">+ hour + </span><span class="s2">&quot;:&quot; </span><span class="s1">+ min</span><span class="s0">;</span>
+
+                <span class="s1">tvDP.setText(result1)</span><span class="s0">;</span>
+
+                <span class="s1">String day = String.valueOf(dp.getDayOfMonth())</span><span class="s0">;</span>
+                <span class="s1">String month = String.valueOf(dp.getMonth())</span><span class="s0">;</span>
+                <span class="s1">String year = String.valueOf(dp.getYear())</span><span class="s0">;</span>
+                <span class="s1">String result2 = </span><span class="s2">&quot;Date chosen is: &quot; </span><span class="s1">+ day + </span><span class="s2">&quot;/&quot; </span><span class="s1">+ month + </span><span class="s2">&quot;/&quot; </span><span class="s1">+ year</span><span class="s0">;</span>
+
+                <span class="s1">tvTP.setText(result2)</span><span class="s0">;</span>
+
+
+
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+        <span class="s1">btnReset.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s1">tp.setCurrentHour(</span><span class="s3">7</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tp.setCurrentMinute(</span><span class="s3">30</span><span class="s1">)</span><span class="s0">;</span>
+
+                <span class="s1">dp.updateDate(</span><span class="s3">2020</span><span class="s0">, </span><span class="s3">5 </span><span class="s0">, </span><span class="s3">01</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">etName.setText(</span><span class="s2">&quot;&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">etNum.setText(</span><span class="s2">&quot;&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">etPax.setText(</span><span class="s2">&quot;&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+                <span class="s1">tvNameDisp.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tvNumDisp.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tvPaxDisp.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tvArea.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tvDP.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">tvTP.setText(</span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+
+
+
+
+            <span class="s1">}</span>
+    <span class="s1">})</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span></pre>
+</body>
+</html>
